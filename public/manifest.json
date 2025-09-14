@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Meal meter extension",
+  "version": "0.1.0",
+  "description": "A Chrome extension that analyzes your Swiggy spending",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "assets/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assets/contentScript.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"]
+}
