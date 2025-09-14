@@ -2,6 +2,6 @@
 – A Chrome extension that analyzes your Swiggy spending, categorizes orders by restaurant and food type, and gives you AI-powered insights with visual summaries.
 
 ## Technologies used:
-    React
-    Vite
-    Material UI
+- React
+- Vite
+- Material UI
